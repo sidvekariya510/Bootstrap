@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- title -->
+    <title>Commute</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=1x&id=wuGDzRr010d0&format=png">
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* section-1 */
+        .section1 .overlay {
+            background: url(img/bench.jpg) center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-width: 100%;
+        }
+
+
+        .section1 .innercontainer .banner {
+            background: rgba(0, 0, 0, 0.65);
+            padding: 3% 13% 10% 13%;
+        }
+
+        /* section-3*/
+        .section3 input[type="text"], .section3 input[type="email"], .section3 textarea{
+            background-color: #f6f6f6;
+            color: #777;
+            border: 0px;
+            padding: 15px 35px;
+            margin: 10px;
+        }
+
+        /* section7 */
+        .section7 .overlay {
+            background: rgba(0, 0, 0);
+            min-width: 100%;
+            background-size: cover;
+        }
+
+
+        /* media query for smallest screen 300px */
+        @media (max-width:575px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .section6 .para {
+                font-size: 18px !important;
+                font-weight: 500 !important;
+            }
+
+            .section6 .email {
+                font-size: 17px !important;
+            }
+
+            .section6 .subscribe {
+                background-color: #da9d40 !important;
+                color: #ffffff;
+                border-radius: unset;
+                padding: 2px 15px !important;
+            }
+
+            .section7 {
+                max-width: 100%;
+            }
+
+            .section7 .footer {
+                padding: 48px 0 !important;
+                margin: 0 !important;
+            }
+
+            .section7 .foothead {
+                text-align: center;
+            }
+
+            .section7 .footicons p {
+                display: flex;
+                justify-content: center;
+            }
+
+            .section7 .footlinks {
+                display: grid !important;
+                grid-template-columns: repeat(3, 1fr);
+                font-size: 16px !important;
+            }
+
+            .section7 .footlinks .home {
+                padding-left: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- section-1 container -->
+    <div class="section1 container-fluid d-flex gx-0">
+        <div class="overlay container">
+            <div class="innercontainer container-fluid">
+                <div class="row banner d-flex justify-content-between text-light gx-0">
+                    <!-- Heading -->
+                    <div class="h3 col-sm-4 col-4 text-sm-start">
+                        Commute</div>
+
+                    <!-- menu button -->
+                    <div class="menu col-sm-8 col-8 text-end ">
+                        <a class="bar btn btn-transparent" data-bs-toggle="collapse" href="#collapseExample"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
+                        </a>
+                    </div>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body text-center list-unstyled bg-dark bg-gradient">
+                            <li><a class="dropdown-item fs-5 text-muted" href="index.html">Home</a></li>
+                            <li><a class="dropdown-item fs-5 text-muted" href="about_us.html">About Us</a></li>
+                            <li><a class="dropdown-item fs-5 text-muted" href="services.html">Services</a></li>
+                            <li><a class="dropdown-item fs-5 text-muted" href="gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item fs-5 text-muted" href="contact.html">Contact</a></li>
+                            <li><a class="dropdown-item fs-5 text-muted" href="#"><i class="fa-solid fa-phone fa-sm p-2"
+                                        style="color: #ffd70f;"></i>
+                                    +12 34 3456 7890</a></li>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section-2 container -->
+    <div class="section2 container-fluid" style="background-color: #e9ecef;">
+        <div class="container">
+            <p class="text-muted py-3 px-5 mx-lg-5 mx-sm-0"><a href="index.html"
+                    style="text-decoration: none; color: #da9d40 ;">Home</a> / Contact Us</p>
+        </div>
+    </div>
+    <!-- section-3 container -->
+    <div class="section3 container-fluid">
+        <div class="container">
+            <h2 class="text-center p-sm-4">Contact Us</h2>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <div class="row p-lg-5 pb-sm-5">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <label class="ps-2">YOUR NAME:</label>
+                            <input class="form-control" type="text" name="" id="" placeholder="" required>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <label class="ps-2">PHONE NUMBER:</label>
+                            <input class="form-control" type="text" name="" id="" placeholder="" required>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <label class="ps-2">EMAIL ADDRESS:</label>
+                            <input class="form-control" type="email" name="email" id="" placeholder="" required>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <label class="ps-2">SUBJECT:</label>
+                            <input class="form-control" type="text" name="subject" id="" placeholder="" required>
+                        </div>
+
+                        <div class="">
+                            <textarea class="col-sm-12 form-control" name="" id="" cols="" rows="10"></textarea>
+                        </div>
+
+
+                        <div class="col-md-3 col-sm-4 ps-4">
+                            <button class="form-control text-light rounded-0" type="submit" value="submit" style="background-color: #da9d40;">Submit</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- section-5 container -->
+    <div class="section5 container-fluid">
+        <div class="map row">
+            <div class="col-12">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59533.26497147759!2d72.822296!3d21.1592!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat%2C%20India!5e0!3m2!1sen!2sus!4v1691093387260!5m2!1sen!2sus"
+                    style="width: 100%; height: 350px;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- section-6 Container -->
+    <div class="section6 container-fluid" style="background: #f8f9fa;">
+        <div class="container">
+            <div class="row text-center py-5">
+                <div class="col-12 pb-5">
+                    <h1 class="fw-bold">Newsletter</h1>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-sm-12 text-start">
+                    <p class="para fs-4">Duis nisi sapien, elementum finibus fermentum eget, aliquet a leo.</p>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <form class="row my-lg-0 my-sm-3">
+                        <div class="col-6 offset-1">
+                            <input class="email fs-4"
+                                style="border-bottom: 2px solid black; border-top: none; border-left: none; border-right: none;"
+                                type="text" name="email" id="" placeholder="Enter your Email">
+
+                        </div>
+                        <div class="col-4">
+                            <input class="subscribe btn btn-warning btn-sm text-light py-lg-2 px-lg-3 py-sm-2 px-sm-5"
+                                style="background-color: #da9d40;" type="button" value="Subscribe">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section-7 Container -->
+    <div class="section7 container-fluid gx-0">
+        <div class="overlay">
+            <div class="container">
+                <div class="footer row text-light py-5 px-3">
+                    <div class="foothead col-lg-4 col-sm-12 text-lg-start text-sm-center">
+                        <h1 class="display-6 fw-bold">Get In Touch with us</h1>
+                    </div>
+                    <div class="footicons col-lg-8 fs-5">
+                        <p class="d-flex justify-content-lg-end justify-content-sm-center pt-2">
+                            <a href=""><i class="fa-brands fa-facebook-f text-muted ps-4"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter text-muted ps-4"></i></a>
+                            <a href=""><i class="fa-brands fa-google-plus-g text-muted ps-4"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram text-muted ps-4"></i></a>
+                        </p>
+                        <li
+                            class="footlinks list-unstyled d-flex justify-content-lg-end justify-content-sm-center pt-2">
+                            <a class="home text-decoration-none text-muted" href="index.html">Home</a>
+                            <a class="text-decoration-none ps-3 text-muted" href="about_us.html">About Us</a>
+                            <a class="text-decoration-none ps-3 text-muted" href="services.html">Services</a>
+                            <a class="text-decoration-none ps-3 text-muted" href="gallery.html">Gallery</a>
+                            <a class="text-decoration-none ps-3 text-muted" href="">Subscribe</a>
+                            <a class="text-decoration-none ps-3 text-muted" href="contact.html">Contact</a>
+                        </li>
+                    </div>
+                    <hr class=" text-light my-4">
+                    <div class="footerbottom col-12 text-center text-muted">
+                        <p class="">
+                            © 2023 Commute. All rights reserved | Design by <a href="https://github.com/sidvekariya510"
+                                class="text-light text-decoration-none">Siddharth.V</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
